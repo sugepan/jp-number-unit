@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>jp-number-unit リアルタイム変換</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    input {
+      font-size: 1.2rem;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    #result {
+      font-size: 1.5rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>jp-number-unit 変換サンドボックス</h1>
+  <input type="text" id="numberInput" placeholder="数値を入力（例：1234567890000）" />
+  <div id="result">→ 変換結果がここに表示されます</div>
+
+  <script type="module">
+    import { formatNumberUnit } from './index.js';
+
+    const input = document.getElementById('numberInput');
+    const result = document.getElementById('result');
+
+    input.addEventListener('input', () => {
+      const value = input.value.replace(/,/g, '').trim();
+
+      try {
+        if (value === '') {
+          result.textContent = '→ 数値を入力してください';
+          return;
+        }
+
+        const big = BigInt(value);
+        result.textContent = '→ ' + formatNumberUnit(big);
+      } catch (e) {
+        result.textContent = '→ 無効な数値です';
+      }
+    });
+  </script>
+</body>
+</html>

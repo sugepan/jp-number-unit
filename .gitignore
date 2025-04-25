@@ -1,0 +1,13 @@
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# npmパッケージ
+*.tgz
+
+# その他
+node_modules/

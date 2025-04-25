@@ -1,0 +1,14 @@
+# ブラウザ用のデモファイル（npmには不要）
+demo.html
+
+# 各種作業ファイル、バックアップ
+*.zip
+*.tgz
+
+# エディタ・IDE関連
+.vscode/
+.idea/
+
+# OS・ビルド系
+.DS_Store
+Thumbs.db
