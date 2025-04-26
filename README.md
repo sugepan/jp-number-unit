@@ -16,6 +16,9 @@ formatNumberUnit(1234567890000n); // "1234.5678兆"
 - BigInt 完全対応
 - 小数4桁まで表示、繰り上がり防止
 
+## デモ
+https://sugepan.github.io/jp-number-unit/demo.html
+
 ## ライセンス
 
 MIT
