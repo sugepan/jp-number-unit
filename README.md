@@ -5,7 +5,7 @@
 ## 使用例
 
 ```js
-import { formatNumberUnit } from './src/index.js';
+import { formatNumberUnit } from './index.js';
 
 formatNumberUnit(1234567890000n); // "1234.5678兆"
 ```
