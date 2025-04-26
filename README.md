@@ -5,7 +5,7 @@
 ## 使用例
 
 ```js
-import { formatNumberUnit } from './index.js';
+import { formatNumberUnit } from './node_modules/jp-number-unit/index.js';
 
 formatNumberUnit(1234567890000n); // "1234.5678兆"
 ```

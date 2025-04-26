@@ -1,6 +1,6 @@
 {
   "name": "jp-number-unit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "日本の数値単位（万・億・兆・京・垓・…那由多・無量大数）に変換するユーティリティライブラリ",
   "main": "./index.js",
   "type": "module",
